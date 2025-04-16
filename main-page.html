@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
  <style>
+.nav-link{
+  color: white;
+}
+
+.nav-link:hover{
+  color: #e63400;
+}
+
+.navbar-brand{
+position: relative;
+right: 40px;
+}
+
 
 .navbar-brand:hover{
 color: #e63400;
@@ -43,22 +56,37 @@ color: #e63400;
       background-color: #e63400;
     }
 
+    .dropdown-mega {
+    min-width: 2000px;
+    padding: 2rem;
+    background-color: #111; 
+    color: white;
+    border: none;
+  }
+  .dropdown-mega a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.25rem 0;
+    font-weight: 600;
+  }
+
   </style>
 
 </head>
 
 <body>
-
+<div class="row">
   <nav class="navbar navbar-dark navbar-expand-lg bg-black fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid col-sm-11">
 
 
 
-      <button class="navbar-toggler col-1 col-lg-10 mx-0" type="button" data-bs-toggle="offcanvas"
+      <button class="navbar-toggler col-1 col-lg-12 mx-0" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand col-10 col-lg-1 mx-0 fw-bold fs-4" href="#">DOMĚSTIKA</a>
+      <a class="navbar-brand col-10 col-lg-1 mx-5 fw-bold fs-4 " href="#">DOMĚSTIKA</a>
 
 
       <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
@@ -74,11 +102,13 @@ color: #e63400;
           <ul class="navbar-nav pe-3 me-3 mb-2 mb-lg-0">
 
             <li class="nav-item dropdown">  
-              <a class="nav-link text-white fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Cursos
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark columns-2" style="min-width: 300px;">
+              <ul class="dropdown-menu dropdown-mega ">
+                <div class="row"> 
+                  <div class="col-3 ">
                 <li><a class="dropdown-item" href="#">Todos los cursos →</a></li>
                 <li><a class="dropdown-item" href="#">Ilustración</a></li>
                 <li><a class="dropdown-item" href="#">Craft</a></li>
@@ -96,6 +126,9 @@ color: #e63400;
                 <li><a class="dropdown-item" href="#">Inteligencia Artificial</a></li>
                 <li><a class="dropdown-item" href="#">Bienestar</a></li>
                 <li><a class="dropdown-item" href="#">Cómo convertirse en</a></li>
+              </div>
+                <div class="col-3">
+
                 <li><a class="dropdown-item" href="#">Especializaciones</a></li>
                 <li><a class="dropdown-item" href="#">Domestika Basics</a></li>
                 <li><a class="dropdown-item" href="#">Cursos nuevos</a></li>
@@ -104,24 +137,25 @@ color: #e63400;
                 <li><a class="dropdown-item" href="#">Cursos gratis con </a></li>
                 <li><a class="dropdown-item" href="#">Tarjetas regalo </a></li>
                 <li><a class="dropdown-item" href="#">Certificados Plus </a></li>
-
-              
+              </div>
+              </div>
 
               </ul>
+              
              
             </li>
             
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" aria-current="page" href="#">Comunidad</a>
+              <a class="nav-link fw-bold" aria-current="page" href="#">Comunidad</a>
             </li>
 
             
             <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="#">Plus</a>
+              <a class="nav-link  fw-bold" href="#">Plus</a>
             </li>
           
             <li class="nav-item dropdown">
-              <a class="nav-link text-white fw-bold " href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link  fw-bold " href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 •••
               </a>
@@ -132,6 +166,8 @@ color: #e63400;
                 <li><a class="dropdown-item" href="#">Domestika Live</a></li>
               </ul>
             </li>
+
+            
           
           </ul>
 
@@ -139,7 +175,8 @@ color: #e63400;
 
 
           <form class="d-flex mx-auto" style="width: 700px;" role="search">
-            <input class="form-control search-input me-2 bg-dark border-0 text-white"  type="search" placeholder="Buscar cursos" aria-label="Search">
+            <span class="input-group-text bg-dark  border-0 text-white" id="search-icon"><i class=" bi-search"></i></span>
+             <input class="form-control search-input me-2 bg-dark border-0 text-white"  type="search" placeholder="Buscar cursos" aria-label="Search">
           </form>
         </div>   
       </div>
@@ -152,12 +189,19 @@ color: #e63400;
       </div>
     </div>
   </nav>
+</div>
 
+<div class="row">
+  <div class="col-12"></div>
+</div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
 
 </body>
