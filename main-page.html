@@ -46,7 +46,7 @@ color: #e63400;
 }
 
 .btn-orange{
-  background-color: #ff3c00;
+  background-color: #f02d00;
   color: white;
       font-weight: bold;
       border-radius: 0.4rem;
@@ -56,14 +56,14 @@ color: #e63400;
       background-color: #e63400;
     }
 
-    .dropdown-mega {
+    .dropdown-lrg {
     min-width: 2000px;
     padding: 2rem;
-    background-color: #111; 
+    background-color: #161616; 
     color: white;
     border: none;
   }
-  .dropdown-mega a {
+  .dropdown-lrg a {
     color: white;
     text-decoration: none;
     display: block;
@@ -71,13 +71,41 @@ color: #e63400;
     font-weight: 600;
   }
 
+
+  .contenedor-main {
+    background-color: #202020;
+    color: white;
+    padding: 4rem 2rem;
+  }
+
+  .contenedor-main-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .badge-g {
+    background-color: #ff007a;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.2em 0.6em;
+    font-weight: bold;
+  }
+
+  .precio {
+    text-decoration: line-through;
+    color: #ff007a;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+
+
   </style>
 
 </head>
 
 <body>
 <div class="row">
-  <nav class="navbar navbar-dark navbar-expand-lg bg-black fixed-top">
+  <nav class="navbar navbar-dark navbar-expand-lg bg-black fixed-top" >
     <div class="container-fluid col-sm-11">
 
 
@@ -106,7 +134,7 @@ color: #e63400;
                 aria-expanded="false">
                 Cursos
               </a>
-              <ul class="dropdown-menu dropdown-mega ">
+              <ul class="dropdown-menu dropdown-lrg ">
                 <div class="row"> 
                   <div class="col-3 ">
                 <li><a class="dropdown-item" href="#">Todos los cursos →</a></li>
@@ -174,7 +202,7 @@ color: #e63400;
           
 
 
-          <form class="d-flex mx-auto" style="width: 700px;" role="search">
+          <form class="d-none d-lg-flex mx-auto mt-2 me-3" style="width: 650px; height: 30px;" role="search">
             <span class="input-group-text bg-dark  border-0 text-white" id="search-icon"><i class=" bi-search"></i></span>
              <input class="form-control search-input me-2 bg-dark border-0 text-white"  type="search" placeholder="Buscar cursos" aria-label="Search">
           </form>
@@ -182,7 +210,10 @@ color: #e63400;
       </div>
 
       <div class="d-flex align-items-center ms-auto">
-        <i class=" bi-cart nav-icon"></i>
+        <a href="#" class="text-white">
+          <i class=" bi-cart nav-icon"></i>
+        </a>
+        
         <a href="#" class="login-link fw-bold">Entrar</a>
 
         <a href="#" class="btn btn-orange">Únete Gratis</a>
@@ -192,7 +223,24 @@ color: #e63400;
 </div>
 
 <div class="row">
-  <div class="col-12"></div>
+  <div class="col-12">
+    <div class="container-fluid contenedor-main" style="height: 624px; padding-top: 111.6px;">
+      <div class="row align-items-center">
+      
+        <div class="col-md-6 contenedor-main-text">
+          <h1>
+            Más de 1.000 cursos 
+            <span class="badge-g">GRATIS</span> <br>
+            para creativos
+          </h1>
+          <p class="mt-4">
+            <span class="precio">$3599</span>
+            <span class="fs-4">$0</span>
+          </p>
+          <button class="btn btn-orange mt-3 px-4 py-2 rounded">Únete Gratis</button>
+        </div>
+    
+  </div>
 </div>
 
 
