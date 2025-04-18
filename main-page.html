@@ -80,22 +80,25 @@ color: #e63400;
 
   .contenedor-main-text h1 {
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight:100;
   }
 
   .badge-g {
     background-color: #ff007a;
     color: white;
     border-radius: 1rem;
-    padding: 0.2em 0.6em;
+    padding: 0.01em 0.5em 0.19em 0.5em;
+    border-radius: 50px;
     font-weight: bold;
+    font-size: 30px;
   }
 
   .precio {
-    text-decoration: line-through;
-    color: #ff007a;
+    text-decoration: line-through #ff007a;
+    color: white;
     font-weight: bold;
     margin-right: 1rem;
+    font-size: 30px;
   }
 
 
@@ -114,7 +117,7 @@ color: #e63400;
         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand col-10 col-lg-1 mx-5 fw-bold fs-4 " href="#">DOMĚSTIKA</a>
+      <a class="navbar-brand col-1 col-lg-1 mx-5 fw-bold fs-4 " href="#">DOMĚSTIKA</a>
 
 
       <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
@@ -203,14 +206,16 @@ color: #e63400;
 
 
           <form class="d-none d-lg-flex mx-auto mt-2 me-3" style="width: 650px; height: 30px;" role="search">
-            <span class="input-group-text bg-dark  border-0 text-white" id="search-icon"><i class=" bi-search"></i></span>
+            <span class="input-group-text bg-dark border-0 text-white" id="search-icon"><i class="d-flex bi-search"></i></span>
              <input class="form-control search-input me-2 bg-dark border-0 text-white"  type="search" placeholder="Buscar cursos" aria-label="Search">
           </form>
         </div>   
       </div>
 
+      
       <div class="d-flex align-items-center ms-auto">
         <a href="#" class="text-white">
+          <span class=" bg-black border-0 text-white me-3" id="search-icon "> <i class="d-lg-none bi-search"></i> </span>
           <i class=" bi-cart nav-icon"></i>
         </a>
         
@@ -224,20 +229,22 @@ color: #e63400;
 
 <div class="row">
   <div class="col-12">
-    <div class="container-fluid contenedor-main" style="height: 624px; padding-top: 111.6px;">
+    <div class="container-fluid contenedor-main" style="height: 624px; padding-top: 181.6px; ">
       <div class="row align-items-center">
       
         <div class="col-md-6 contenedor-main-text">
+         <div class="container ">
           <h1>
-            Más de 1.000 cursos 
-            <span class="badge-g">GRATIS</span> <br>
-            para creativos
+            Más de 1.000 <br>cursos 
+            <span class="badge-g">GRATIS</span> 
+            para <br> creativos
           </h1>
           <p class="mt-4">
             <span class="precio">$3599</span>
-            <span class="fs-4">$0</span>
+            <span class="" style="font-size: 30px;">$0</span>
           </p>
-          <button class="btn btn-orange mt-3 px-4 py-2 rounded">Únete Gratis</button>
+          <button class="btn btn-orange mt-4 ms-0 px-4 py-2 rounded fs-5">Únete Gratis</button>
+        </div>
         </div>
     
   </div>
