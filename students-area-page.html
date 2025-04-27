@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students Area Pages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    .nav-link {
+      color: white;
+    }
+
+    .nav-link:hover {
+      color: #e63400;
+    }
+
+    .navbar-brand {
+      position: relative;
+      right: 40px;
+    }
+
+
+    .navbar-brand:hover {
+      color: #e63400;
+    }
+
+    .search-input::placeholder {
+      color: gray;
+    }
+
+    .nav-icon {
+      color: white;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+
+    .login-link {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+
+    }
+
+    .btn-orange {
+      background-color: #f02d00;
+      color: white;
+      font-weight: 500;
+      border-radius: 0.4rem;
+
+    }
+
+    .btn-orange:hover {
+      background-color: #e63400;
+    }
+
+    .dropdown-lrg {
+      min-width: 2000px;
+      padding: 2rem;
+      background-color: #161616;
+      color: white;
+      border: none;
+    }
+
+    .dropdown-lrg a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.25rem 0;
+      font-weight: 600;
+    }
+
+
+    .contenedor-main {
+      background-color: #202020;
+      color: white;
+      padding: 4rem 2rem;
+    }
+
+
+    .badge-g {
+      background-color: #ff007a;
+      color: white;
+      border-radius: 1rem;
+      padding: 0.1em 0.5em 0.19em 0.5em;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 2.3vw;
+    }
+
+    .precio {
+      text-decoration: line-through #ff007a;
+      margin-right: 1rem;
+      font-size: 2.3vw;
+      font-family: 'Montserrat';
+    }
+
+    .dropdown-ch:hover {
+      color: #f02d00;
+    }
+
+    .list-acc {
+
+      text-decoration: none;
+      color: black;
+
+    }
+
+    .list-acc:hover {
+      color: #f02d00;
+    }
+
+    .btn-nar:hover {
+      background-color: #e63400;
+    }
+
+
+    .areaa {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .areaa:hover {
+      color: #f02d00;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="row">
+    <nav class="navbar navbar-dark navbar-expand-lg  fixed-top" style="background-color: #161616;">
+      <div class="container-fluid col-sm-11">
+
+
+
+        <button class="navbar-toggler col-1 col-lg-12 mx-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand col-1 col-lg-1 mx-5 fw-bold fs-4 " href="#">DOMĚSTIKA</a>
+
+
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+
+            <ul class="navbar-nav pe-3 me-3 mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Cursos
+                </a>
+                <ul class="dropdown-menu dropdown-lrg ">
+                  <div class="row">
+                    <div class="col-3 ">
+                      <li><a class="dropdown-ch" href="#">Todos los cursos →</a></li>
+                      <li><a class="dropdown-ch" href="#">Ilustración</a></li>
+                      <li><a class="dropdown-ch" href="#">Craft</a></li>
+                      <li><a class="dropdown-ch" href="#">Marketing y Negocios</a></li>
+                      <li><a class="dropdown-ch" href="#">Fotografía y Video</a></li>
+                      <li><a class="dropdown-ch" href="#">Diseño</a></li>
+                      <li><a class="dropdown-ch" href="#">3D y Animación</a></li>
+                      <li><a class="dropdown-ch" href="#">Arquitectura y Espacios</a></li>
+                      <li><a class="dropdown-ch" href="#">Escritura</a></li>
+                      <li><a class="dropdown-ch" href="#">Moda</a></li>
+                      <li><a class="dropdown-ch" href="#">Diseño Web y App</a></li>
+                      <li><a class="dropdown-ch" href="#">Caligrafía y Tipografía</a></li>
+                      <li><a class="dropdown-ch" href="#">Música y Audio</a></li>
+                      <li><a class="dropdown-ch" href="#">Cocina</a></li>
+                      <li><a class="dropdown-ch" href="#">Inteligencia Artificial</a></li>
+                      <li><a class="dropdown-ch" href="#">Bienestar</a></li>
+                      <li><a class="dropdown-ch" href="#">Cómo convertirse en</a></li>
+                    </div>
+                    <div class="col-3">
+
+                      <li><a class="dropdown-ch" href="#">Especializaciones</a></li>
+                      <li><a class="dropdown-ch" href="#">Domestika Basics</a></li>
+                      <li><a class="dropdown-ch" href="#">Cursos nuevos</a></li>
+                      <li><a class="dropdown-ch" href="#">Cursos mejor valorados</a></li>
+                      <li><a class="dropdown-ch" href="#">Cursos populares</a></li>
+                      <li><a class="dropdown-ch" href="#">Cursos gratis con </a></li>
+                      <li><a class="dropdown-ch" href="#">Tarjetas regalo </a></li>
+                      <li><a class="dropdown-ch" href="#">Certificados Plus </a></li>
+                    </div>
+                  </div>
+
+                </ul>
+
+
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="students-area-page.html">Comunidad</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link  fw-bold" href="#">Plus</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link  fw-bold  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  •••
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-lrg">
+                  <li><a class="dropdown-ch" href="#">Foros</a></li>
+                  <li><a class="dropdown-ch" href="#">Blogs</a></li>
+                  <li><a class="dropdown-ch" href="#">Escuelas</a></li>
+                  <li><a class="dropdown-ch" href="#">Domestika Live</a></li>
+                </ul>
+              </li>
+
+
+
+            </ul>
+
+
+
+
+            <form class="d-none d-lg-flex mx-auto mt-2 me-3" style="width: 650px; height: 30px;" role="search">
+              <span class="input-group-text bg-dark border-0 text-white" id="search-icon"><i
+                  class="d-flex bi-search"></i></span>
+              <input class="form-control search-input me-2 bg-dark border-0 text-white" type="search"
+                placeholder="Buscar cursos" aria-label="Search">
+            </form>
+          </div>
+        </div>
+
+
+        <div class="d-flex align-items-center ms-auto">
+          <a href="#" class="text-white">
+            <span class=" bg-black border-0 text-white me-3" id="search-icon "> <i class="d-lg-none bi-search"></i>
+            </span>
+            <i class=" bi-cart nav-icon"></i>
+          </a>
+
+          <a href="#" class="login-link fw-bold">Entrar</a>
+
+          <a href="#" class="btn btn-orange" style="margin-left: 15px;">Únete Gratis</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+</body>
+</html>
