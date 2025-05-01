@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .nav-link {
+            color: white;
+        }
+        
+        .credits{
+            text-decoration: none;
+            color: #848484;
+            font-size: 0.9rem;
+        }
+        .credits:hover{
+    color: #f02d00;
+        }
+
+        .nav-linkv {
+            text-decoration: none;
+            color: #767676;
+            font-size: 0.8rem;
+            margin-bottom: -0.8rem;
+        }
+
+        .nav-link:hover {
+            color: #e63400;
+        }
+
+        .nav-linkv:hover {
+            color: #e63400;
+        }
+
+        .navbar-brand {
+            position: relative;
+            right: 40px;
+        }
+
+
+        .navbar-brand:hover {
+            color: #e63400;
+        }
+
+        .search-input::placeholder {
+            color: gray;
+        }
+
+        .nav-icon {
+            color: white;
+            font-size: 1.4rem;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+
+        .login-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+
+        }
+
+        .btn-orange {
+            background-color: #f02d00;
+            color: white;
+            font-weight: 500;
+            border-radius: 0.4rem;
+
+        }
+
+        .btn-orange:hover {
+            background-color: #e63400;
+        }
+
+        .dropdown-lrg {
+            min-width: 2000px;
+            padding: 2rem;
+            background-color: #161616;
+            color: white;
+            border: none;
+        }
+
+        .dropdown-lrg a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.25rem 0;
+            font-weight: 600;
+        }
+
+
+        .contenedor-main {
+            background-color: #202020;
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+
+        .badge-g {
+            background-color: #ff007a;
+            color: white;
+            border-radius: 1rem;
+            padding: 0.1em 0.5em 0.19em 0.5em;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 2.3vw;
+        }
+
+        .precio {
+            text-decoration: line-through #ff007a;
+            margin-right: 1rem;
+            font-size: 2.3vw;
+            font-family: 'Montserrat';
+        }
+
+        .dropdown-ch:hover {
+            color: #f02d00;
+        }
+
+        .list-acc {
+
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .list-acc:hover {
+            color: #f02d00;
+        }
+
+        .btn-nar:hover {
+            background-color: #e63400;
+        }
+
+
+        .areaa {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .areaa:hover {
+            color: #f02d00;
+        }
+
+        .titulo:hover{
+            color: #e63400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="row">
+        <nav class="navbar navbar-dark navbar-expand-lg  fixed-top" style="background-color: #161616;">
+            <div class="container-fluid col-sm-11">
+
+
+
+                <button class="navbar-toggler col-1 col-lg-12 mx-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand col-1 col-lg-1 mx-5 fw-bold fs-4 " href="main-page.html">DOMĚSTIKA</a>
+
+
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <ul class="navbar-nav pe-3 me-3 mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cursos
+                                </a>
+                                <ul class="dropdown-menu dropdown-lrg " style="margin-left: -19rem;">
+                                    <div class="row">
+                                        <div class="col-3 ">
+                                            <li><a class="dropdown-ch" href="all-courses-page.html">Todos los cursos
+                                                    →</a></li>
+                                            <li><a class="dropdown-ch" href="#">Ilustración</a></li>
+                                            <li><a class="dropdown-ch" href="#">Craft</a></li>
+                                            <li><a class="dropdown-ch" href="#">Marketing y Negocios</a></li>
+                                            <li><a class="dropdown-ch" href="#">Fotografía y Video</a></li>
+                                            <li><a class="dropdown-ch" href="#">Diseño</a></li>
+                                            <li><a class="dropdown-ch" href="#">3D y Animación</a></li>
+                                            <li><a class="dropdown-ch" href="#">Arquitectura y Espacios</a></li>
+                                            <li><a class="dropdown-ch" href="#">Escritura</a></li>
+                                            <li><a class="dropdown-ch" href="#">Moda</a></li>
+                                            <li><a class="dropdown-ch" href="#">Diseño Web y App</a></li>
+                                            <li><a class="dropdown-ch" href="#">Caligrafía y Tipografía</a></li>
+                                            <li><a class="dropdown-ch" href="#">Música y Audio</a></li>
+                                            <li><a class="dropdown-ch" href="#">Cocina</a></li>
+                                            <li><a class="dropdown-ch" href="#">Inteligencia Artificial</a></li>
+                                            <li><a class="dropdown-ch" href="#">Bienestar</a></li>
+                                            <li><a class="dropdown-ch" href="#">Cómo convertirse en</a></li>
+                                        </div>
+                                        <div class="col-3">
+
+                                            <li><a class="dropdown-ch" href="#">Especializaciones</a></li>
+                                            <li><a class="dropdown-ch" href="#">Domestika Basics</a></li>
+                                            <li><a class="dropdown-ch" href="#">Cursos nuevos</a></li>
+                                            <li><a class="dropdown-ch" href="#">Cursos mejor valorados</a></li>
+                                            <li><a class="dropdown-ch" href="#">Cursos populares</a></li>
+                                            <li><a class="dropdown-ch" href="#">Cursos gratis con </a></li>
+                                            <li><a class="dropdown-ch" href="#">Tarjetas regalo </a></li>
+                                            <li><a class="dropdown-ch" href="certificates.html">Certificados <span
+                                                        class="mt-2 badge bg-white position-sticky border border-dark-subtle "
+                                                        style="text-transform: uppercase; color: #f02d00;"> Plus</span>
+                                                </a></li>
+                                        </div>
+                                    </div>
+
+                                </ul>
+
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" aria-current="page"
+                                    href="students-area-page.html">Comunidad</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link  fw-bold" href="#">Plus</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  fw-bold  " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    •••
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark dropdown-lrg"
+                                    style="margin-left: -33.5rem;">
+                                    <li><a class="dropdown-ch" href="#">Foros</a></li>
+                                    <li><a class="dropdown-ch" href="#">Blogs</a></li>
+                                    <li><a class="dropdown-ch" href="#">Escuelas</a></li>
+                                    <li><a class="dropdown-ch" href="#">Domestika Live</a></li>
+                                </ul>
+                            </li>
+
+
+
+                        </ul>
+
+
+
+
+                        <form class="d-none d-lg-flex mx-auto mt-2 me-3" style="width: 650px; height: 30px;"
+                            role="search">
+                            <span class="input-group-text bg-dark border-0 text-white" id="search-icon"><i
+                                    class="d-flex bi-search"></i></span>
+                            <input class="form-control search-input me-2 bg-dark border-0 text-white" type="search"
+                                placeholder="Buscar cursos" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="d-flex align-items-center ms-auto">
+                    <a href="#" class="text-white">
+                        <span class=" bg-black border-0 text-white me-3" id="search-icon "> <i
+                                class="d-lg-none bi-search"></i>
+                        </span>
+                        <i class=" bi-cart nav-icon"></i>
+                    </a>
+
+                    <a href="#" class="login-link fw-bold">Entrar</a>
+
+                    <a href="#" class="btn btn-orange" style="margin-left: 15px;">Únete Gratis</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Section -->
+    <section class="mt-1 bg-white  " style="padding-top: 5rem;  ">
+        <div class="container-md mt-md-5 me-md-5 pe-md-5 mb-5">
+            <div class="row align-items-center ms-md-5 ps-md-5 flex-column-reverse flex-md-row">
+                <div class="col-lg-6 col-12  ">
+                    <h1 class="display-4 fw-semibold mb-4 w-100 w-md-50">Certificados de los cursos</h1>
+                    <p class="lead mb-4 ">Si eres Plus, cuando completes un curso que hayas
+                        comprado obtendrás un certificado personalizado firmado por el profesor para que lo
+                        puedas
+                        compartir.</p>
+                    <a href="#" class="btn btn-lg text-white  w-100 d-block d-md-inline "
+                        style="background-color: #f02d00;">Leer más sobre Plus</a>
+                </div>
+                <div class="col-md-6 col-12  d-flex justify-content-md-start text-md-start">
+                    <div class="text-center">
+                        <div class="position-relative ">
+                            <img src="https://cdn2.domestika.org/assets/certificates/stamp-6feb1b7320670e99f30c245a339e9f639d1f0fa367a98c3dc7cddb5d30f52890.png"
+                                class="ms-3 mt-3 " style="width: 11.5rem; height: 11.5rem; " alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tablet Section -->
+
+    <section class="mt-5 pt-5">
+        <div class="container ">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Compártelos con el mundo</h1>
+                    <p class="lead">Tus certificados tienen un enlace único para que puedas compartir una versión online
+                        donde y con quien quieras.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="position-relative mw-100 h-auto">
+                        <div class="overflow-hidden position-relative bg-black"
+                            style="border-radius: 1.25rem; border: 0.75rem solid black;">
+                            <div class="w-100 h-auto bg-white" style="padding: 0.125rem; border-radius: 0.5rem;">
+                                <div class="position-relative bg-white"
+                                    style="min-height: 25rem; padding: 2rem; border: 0.625rem solid #ef45451a;">
+                                    <div class=" d-flex justify-content-between align-items-center">
+                                        <img class="object-fit-cover w-100"
+                                            src="https://cdn2.domestika.org/assets/certificates/tablet/certificate_es-568997a202d8e7ace8ff4d8fc57ff6d6c4c8929ef69281cea5e91dd5fdf4a34e.gif"
+                                            alt="">
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Phone Mockup Section -->
+    <section class="mt-1 bg-white " style="padding-top: 10rem;  ">
+        <div class="container-md mt-md-5 ps-md-5 me-md-5 mb-5">
+            <div class="row align-items-center ">
+                <div class="col-lg-6 col-12  ">
+                    <h1 class=" fw-semibold mb-4 w-100 w-md-50" style="font-size: 2.5rem;">Muestra tus proyectos</h1>
+                    <p class="lead mb-4 " style="font-size: 1.375rem;">Tus certificados vienen con un código
+                        QR que llevará a la última versión de tu proyecto de curso. Así todos verán lo que sabes hacer.
+                    </p>
+                </div>
+                <div class="col-md-6 col-12 d-flex justify-content-md-start text-md-start" style="margin-top: -20rem;">
+                    <div class="text-center">
+                        <div class="position-absolute">
+                            <img src="https://cdn2.domestika.org/assets/certificates/mobile/es-e689447773f875ad934dd2f94e4befb34e45e4e341645388f903d1b8063c0734.png"
+                                class="ms-3  " style="width: 18.9rem; height: 37.5rem;" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row mt-5 pt-2">
+
+            <div class="col-2 mt-5">
+                <img src="https://www.elespectador.com/resizer/v2/IWAGH4BFVVEWDEC22MN3PC6ARM.jpg?auth=0d409827b78a9cdfe4d4d76c06f3480b033cab24477816365545b377200f3794&width=910&height=606&smart=true&quality=70"
+                    class="card-img-top" style="height: 12rem;" alt="curso 1">
+            </div>
+            <div class="col-2 mt-5">
+                <img src="https://www.elespectador.com/resizer/v2/IWAGH4BFVVEWDEC22MN3PC6ARM.jpg?auth=0d409827b78a9cdfe4d4d76c06f3480b033cab24477816365545b377200f3794&width=910&height=606&smart=true&quality=70"
+                    class="card-img-top" style="height: 12rem;" alt="curso 1">
+            </div>
+            <div class="col-2 mt-5">
+                <img src="https://www.elespectador.com/resizer/v2/IWAGH4BFVVEWDEC22MN3PC6ARM.jpg?auth=0d409827b78a9cdfe4d4d76c06f3480b033cab24477816365545b377200f3794&width=910&height=606&smart=true&quality=70"
+                    class="card-img-top" style="height: 12rem;" alt="curso 1">
+            </div>
+            <div class="col-2 mt-5">
+                <img src="https://www.elespectador.com/resizer/v2/IWAGH4BFVVEWDEC22MN3PC6ARM.jpg?auth=0d409827b78a9cdfe4d4d76c06f3480b033cab24477816365545b377200f3794&width=910&height=606&smart=true&quality=70"
+                    class="card-img-top" style="height: 12rem;" alt="curso 1">
+            </div>
+            <div class="col-2 mt-5">
+                <img src="https://www.elespectador.com/resizer/v2/IWAGH4BFVVEWDEC22MN3PC6ARM.jpg?auth=0d409827b78a9cdfe4d4d76c06f3480b033cab24477816365545b377200f3794&width=910&height=606&smart=true&quality=70"
+                    class="card-img-top" style="height: 12rem;" alt="curso 1">
+            </div>
+            <div class="col-2 mt-5">
+                <img src="https://www.elespectador.com/resizer/v2/IWAGH4BFVVEWDEC22MN3PC6ARM.jpg?auth=0d409827b78a9cdfe4d4d76c06f3480b033cab24477816365545b377200f3794&width=910&height=606&smart=true&quality=70"
+                    class="card-img-top" style="height: 12rem;" alt="curso 1">
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Double Column Section -->
+    <section class="mt-1 bg-white  " style="padding-top: 5rem;  ">
+        <div class="container-md mt-md-5 ps-md-5 me-md-5 mb-5">
+            <div class="row align-items-center ms-5 ps-5">
+                <div class="col-lg-5 col-12  ">
+                    <h1 class="fw-semibold mb-4 w-75 w-md-50" style="font-size: 2.5rem;">Personalizados y únicos</h1>
+                    <p class="lead mb-4 ">Cada certificado está firmado por el profesor que ha impartido el
+                        curso. Y también lleva tu nombre, así que es único e irrepetible.</p>
+                </div>
+                <div class="col-lg-5 col-12 ">
+                    <div class="">
+                        <div class="position-relative ">
+                            <h1 class=" fw-semibold mb-4 w-75 w-md-50" style="font-size: 2.5rem;">Imprímelos y
+                                muéstralos</h1>
+                            <p class="lead mb-4 ">Imprime tus certificados para colgarlos en la pared. Será
+                                un bello recordatorio físico de todo lo que has aprendido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Tablet Section -->
+
+    <section class="mt-5 pt-5">
+        <div class="container ">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-semibold mb-3">Firmados por los mejores profesionales</h1>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Professionals Section -->
+<div class="container-fluid">
+    <div class="row ">
+        
+        
+        
+        <!-- First Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Third Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fourth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fifth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sixth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Seventh Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Eigth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ninth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tenth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Eleventh Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Twelfth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Thirteenth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fourteenth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fifteenth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sixteenth Card -->
+        <div class="col-12 col-md-3 g-4 ">
+            <div class="card overflow-hidden" style="width: 21rem; margin: 0 auto; border-radius: 0.75rem;">
+                <div class="position-relative overflow-hidden" style="height: 25rem;">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568158814-3b8e9c1a9618?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzcGVyc29uYXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Alicia Recio Rodríguez" class="object-fit-cover w-100 h-100">
+                   
+                    <div class="position-absolute text-white" style="bottom: 0; right: 0; left: 0; background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%); padding: 2rem 1.5rem 1.5rem;">
+                        <h2 class=" fw-semibold" style="font-size: 1.75rem; margin-bottom: 0.5rem;">Alicia Recio Rodríguez</h2>
+                        <p class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Crochet: crea prendas con una sola aguja</p>
+                        <p class="" style="font-size: 0.85rem; opacity: 0.9;">Diseñadora de crochet nórdico y yarnbomber</p>
+                    <br>
+        
+                        <h2 class=" fw-semibold" style="font-size: 1.1rem; margin-bottom: 0.5rem;">$19 MXN $̶3̶3̶9̶ ̶M̶X̶N̶ </h2>
+                        
+                    </div>
+        
+                </div>
+                <div class="text-center" style="padding: 1.5rem;">
+                    <img src="https://cdn2.domestika.org/assets/certificates/signatures/927327-360d14f65cb81df8c7b79fea1ea14b9a7e1ecfad8529381fda1666e0a77ea9ea.png" 
+                        alt="" class="h-auto object-fit-cover w-100">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- Single Line Section -->
+<section class="mt-5 pt-5">
+    <div class="container ">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <h1 class=" fw-bold mb-3" style="font-size: 1.8rem;">Más cursos para desarrollar tu creatividad</h1>
+                <a href="#" class="btn btn-lg text-white  mt-4 "
+                style="background-color: #f02d00;">Ver todos los cursos</a>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+ <!-- Double Column Section -->
+ <section class="mt-1 bg-white  " style="padding-top: 5rem;  ">
+    <div class="container-md mt-md-5 ps-md-5 me-md-5 mb-5">
+        <div class="row align-items-center ms-5 ps-5">
+            <div class="col-lg-5 col-12  ">
+                <h1 class="fw-semibold mb-4 w-75 w-md-50" style="font-size: 2.5rem;">Todo lo que tienes que saber sobre los certificados</h1>
+            </div>
+            <div class="col-lg-5 col-12 ">
+                <div class="mt-4" style="max-width: 50rem; margin: 0 auto;">
+                    <div class="accordion" id="">
+                      
+                      <!-- Item 1 -->
+                      <div class="" style="border-bottom: 1px solid lightgray; ">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="collapsed text-black bg-transparent fw-semibold titulo" style="padding: 1.5rem ; font-size: 1.25rem; box-shadow: none !important; border-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cuándo recibiré el mío?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#certificatesFAQ">
+                          <div class="text-black" style="padding: 0 0 1.5rem 0;">
+                            Si eres Plus, cuando completes un curso que hayas comprado recibirás tu certificado personalizado al instante.
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Item 2 -->
+                      <div class="" style="border-bottom: 1px solid lightgray; ">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="collapsed text-black bg-transparent fw-semibold titulo" style="padding: 1.5rem ; font-size: 1.25rem; box-shadow: none !important; border-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            ¿Dónde puedo verlos?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#certificatesFAQ">
+                          <div class="text-black" style="padding: 0 0 1.5rem 0;">
+                            Puedes ver todos tus certificados yendo a la sección Certificados de tu perfil.
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Item 3 -->
+                      <div class="" style="border-bottom: 1px solid lightgray; ">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="collapsed text-black bg-transparent fw-semibold titulo" style="padding: 1.5rem ; font-size: 1.25rem; box-shadow: none !important; border-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            ¿En qué formato son?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#certificatesFAQ">
+                          <div class="text-black" style="padding: 0 0 1.5rem 0;">
+                            Podrás descargar los certificados en PDF pero también podrás compartir el enlace online. Los certificados incluyen tu nombre completo, el curso que has realizado, un QR que enlaza a tu proyecto de curso y el nombre y firma del profesor.
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Item 4 -->
+                      <div class="" style="border-bottom: 1px solid lightgray; ">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="collapsed text-black bg-transparent fw-semibold titulo" style="padding: 1.5rem ; font-size: 1.25rem; box-shadow: none !important; border-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            ¿Cuánto duran?
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#certificatesFAQ">
+                          <div class="text-black" style="padding: 0 0 1.5rem 0;">
+                            Los certificados no caducan, una vez lo tengas es tuyo para siempre.
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Credits Section -->
+<section class="mt-5 pt-5">
+    <div class="container ">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <h1 class=" fw-bold text-secondary mb-3" style="font-size: 1rem;">Más cursos para desarrollar tu creatividad</h1>
+                <p>
+                    <a class=" credits" href="">@samrodriguezart</a>
+                    <a class=" credits" href="">@bernatinmotion</a>
+                    <a class=" credits" href="">@laurawaechter</a>
+                    <a class=" credits" href="">@jaimesanchezart</a>
+                    <a class=" credits" href="">@tania_garcia</a>
+                    <a class=" credits" href="">@aaronmartinez</a> <br>
+                    <a class=" credits" href="">@effcy</a>
+                    <a class=" credits" href="">@giselemurias</a>
+                    <a class=" credits" href="">@lisaodt</a>
+                    <a class=" credits" href="">@jaime_y_mrkat</a>
+                    <a class=" credits" href="">@dan_zucco </a>
+                    <a class=" credits" href="">@karolina_pajnowska</a>
+                    <a class=" credits" href="">@dianabeltranherrera</a><br>
+                    <a class=" credits" href="">@nerobear1</a>
+                
+                
+                </p>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-top mt-5 py-4">
+    <div class="container ">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+        <div
+          class="d-flex flex-wrap justify-content-center justify-content-md-start align-items-center gap-3 mb-3 mb-md-0">
+          <small class="me-3">© <strong>Domestika 2025</strong></small>
+          <a href="#" class="text-decoration-none text-dark">Condiciones de Uso</a>
+          <a href="#" class="text-decoration-none text-dark">Política de privacidad</a>
+          <a href="#" class="text-decoration-none text-dark">Política de cookies</a> &nbsp;
+          <a href="#" class="text-decoration-none text-dark" style="text-align: start;">Declaración de accesibilidad</a>
+        </div>
+
+
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-secondary rounded-circle p-2">
+            <i class="bi-facebook"></i>
+          </a>
+          <a href="#" class="btn btn-outline-secondary rounded-circle p-2">
+            <i class="bi-instagram"></i>
+          </a>
+          <a href="#" class="btn btn-outline-secondary rounded-circle p-2">
+            <i class="bi-twitter"></i>
+          </a>
+          <a href="#" class="btn btn-outline-secondary rounded-circle p-2">
+            <i class="bi-pinterest"></i>
+          </a>
+          <a href="#" class="btn btn-outline-secondary rounded-circle p-2">
+            <i class="bi-vimeo"></i>
+          </a>
+          <a href="#" class="btn btn-outline-secondary rounded-circle p-2">
+            <i class="bi-youtube"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+</body>
+
+</html>
